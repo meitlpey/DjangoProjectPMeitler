@@ -1,5 +1,6 @@
 <!-- templates/registration/signup.html -->
 <!DOCTYPE html>
+<center>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,17 +19,17 @@
         }
 
         .signup-container {
-            background-color: #ffffff;
+            background-color: #2d2d2d;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             width: 300px;
             text-align: center;
         }
 
         h1 {
             font-family: 'Open Sans', sans-serif; /* Add your chosen font */
-            color: #333333;
+            color: #ffffff;
         }
 
         form {
@@ -38,7 +39,7 @@
         label {
             display: block;
             margin-bottom: 5px;
-            color: #555555;
+            color: white;
         }
 
         input {
@@ -53,7 +54,7 @@
         button {
             width: 100%;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #001EFF;
             color: white;
             border: none;
             border-radius: 5px;
@@ -63,31 +64,32 @@
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #0017C6;
         }
 
         .back-to-login {
             margin-top: 10px;
             font-size: 14px;
-            color: #555555;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #001EFF;
             color: white;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
         .back-to-login:hover {
-            background-color: #45a049;
+            background-color: #0017C6;
         }
     </style>
     <!-- Link to Google Fonts to import the Open Sans font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
 </head>
 <body>
+    <h1>Peyton Meitler's Steam Stats Page</h1>
+    <br>
     <div class="signup-container">
         <h1>Sign Up</h1>
 
@@ -105,4 +107,5 @@
         <a href="{% url 'login' %}" class="back-to-login">Login</a>
     </div>
 </body>
+</center>
 </html>
