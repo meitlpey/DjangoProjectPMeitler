@@ -57,6 +57,19 @@
             color: white;
             margin-top: 20px; /* Add some top margin for spacing */
         }
+
+        /* Style for the logout button */
+        .logout-button {
+            background-color: #FF2CDF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -103,5 +116,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Logout button with updated href -->
+    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
 </body>
 </html>
